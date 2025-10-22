@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDP Coffee Tracker ☕</title>
+    <link rel="stylesheet" href="css/pico.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>☕ DDP Coffee Tracker</h1>
+      <p class="subtitle">
+        Track your caffeine consumption during exam season!
+      </p>
+
+      <!-- Error Message -->
+      <div id="errorMessage" class="error"></div>
+
+      <!-- Leaderboard -->
+      <section class="leaderboard">
+        <h2>🏆 Top 3 Coffee Champions</h2>
+        <div class="podium" id="podium">
+          <div class="podium-item empty">
+            <div class="rank">🥇</div>
+            <div class="podium-name">???</div>
+            <div class="podium-count">0</div>
+            <div class="podium-label">coffees</div>
+          </div>
+          <div class="podium-item empty">
+            <div class="rank">🥈</div>
+            <div class="podium-name">???</div>
+            <div class="podium-count">0</div>
+            <div class="podium-label">coffees</div>
+          </div>
+          <div class="podium-item empty">
+            <div class="rank">🥉</div>
+            <div class="podium-name">???</div>
+            <div class="podium-count">0</div>
+            <div class="podium-label">coffees</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add Student -->
+      <section class="add-student-section">
+        <h3>Add Student</h3>
+        <form class="add-student-form" id="addStudentForm">
+          <input
+            type="text"
+            id="studentName"
+            placeholder="Enter student name..."
+            required
+            autocomplete="off"
+          />
+          <button type="submit">Add Student</button>
+        </form>
+      </section>
+
+      <!-- Students List -->
+      <section>
+        <h3>All Students</h3>
+        <div id="studentsList" class="students-list">
+          <div class="empty-state">
+            <div class="empty-state-icon">🎓</div>
+            <p>No students yet. Add someone to start tracking!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
